@@ -1,7 +1,74 @@
 # you describe your data using the YAML notation here
 # and then load them using Fixtures.loadModels("data.yml")
 
-# User(bob):
-#   email: bob@gmail.com
-#   password: secret
-#   fullname: Bob
+Developer(voidmain):
+    email:             voidmain1313113@gmail.com
+    password:          secret
+    fullname:          Void Main
+    isAdmin:           true
+
+MobilePlatform(android):
+    name:              Android
+    path:              /public/images/platforms/android.png
+
+MobilePlatform(ios):
+    name:              iOS
+    path:              /public/images/platforms/ios.png
+
+MobilePlatform(wp7):
+    name:              Windows Phone 7
+    path:              /public/images/platforms/wp7.png
+    
+App(ba):
+    appName:                BookAssistant
+    creationTime:           2010-03-25
+    downloadLink:           http://www.example.org
+    projectStatus:          1
+    projectLink:            http://github.com/bookassistant
+    shortDescription:       This is a short description
+    detailedDescription:    >
+                            This is the detailed description.
+    developer:              voidmain
+    supportedPlatforms:     
+                            - android
+                            - ios
+                            - wp7
+                      
+Screenshot(shot1):
+    name:                   ScreenShot1
+    path:                   /public/images/shot1
+    app:                    ba
+
+Screenshot(shot2):
+    name:                   ScreenShot2
+    path:                   /public/images/shot2
+    app:                    ba
+
+Screenshot(shot3):
+    name:                   ScreenShot3
+    path:                   /public/images/shot3
+    app:                    ba
+    
+Feedback(fb1):
+    posterName:             Test
+    posterEmail:            test@email.com
+    postAt:                 2011-01-01
+    postContent:            >
+                            This is insanely true!
+    app:                    ba
+
+Feedback(fb2):
+    posterName:             Test2
+    posterEmail:            test2@email.com
+    postAt:                 2011-01-02
+    postContent:            >
+                            This is insanely true!2
+    app:                    ba
+
+Feedback(fb3):
+    posterName:             Test3
+    posterEmail:            test3@email.com
+    postAt:                 2011-01-03
+    postContent:            >
+                            This is insanely true!3
+    app:                    ba
